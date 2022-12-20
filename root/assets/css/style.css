@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navegador {
+    background-color: #C4E1E7;
+    padding: 15px;
+
+}
+.navegador > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    gap: 60px; 
+    margin-right: 50px;   
+}
+.navegador > ul > li {
+    position: relative;
+}
+.navegador > ul > li:hover ul{
+    display: block;
+}
+.navegador ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #024059;
+    font: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.navegador > ul > li > ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    right: 10px;
+    background-color: #C4E1E7;
+}
+@media(min-width:600px){
+    .navegador .fa-bars {
+        display: none;
+}
+}
+@media(max-width:600px){
+    .navegador .fa-bars {
+    display: block;
+    color: white; 
+    font-size: 30px;
+}
+    .navegador > ul {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 250px;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 200px;
+        height: 100vh;
+        transition: 0.2;
+    }
+    .navegador .fa-bars:hover + ul {
+        left: 0;
+    }
+    .navegador ul:hover {
+        left: 0;
+    }
+}
+
+.encabezado {
+    background-image: url(../img/INSA_slider-web_1920x583_turismo.png);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+}
+.encabezado_1 h1 {
+    color: black;
+    font-size: 25px ;
+    margin-bottom: 50px;
+}
+.btn {
+    background: #fff; 
+    color: rgb(20, 20, 142);
+    font-weight: bold;
+    border: 2px solid #024059; 
+    font-family: 'Noto Sans', sans-serif;
+    padding: 16px 20px;
+    border-radius: 10px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .btn:hover {
+    color: #fff; 
+  }
+  .btn::after {
+    content: "";
+    background: #024059; 
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .btn:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;    
+}
+.subtitulo {
+    width: 100%;
+    margin: 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.pie {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 6px;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    height: 15px;
+    display: flex;   
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.marcas {
+    display: flex;   
+    justify-content: start;
+    align-items: stretch;
+    gap: 200px;
+    padding: 20px;
+}
+.marca1 {
+    display: flex;
+    width: 300px;
+    height: 102px;
+    margin-left: 5px;
+}
+.marca2 {
+    display: flex;
+    width: 300px;
+    height: 120px;
+    margin-right: 25px;
+}
+.marca3 {
+    display: flex;
+    width: 300px;
+    height: 130px;
+}
+.empresa {
+    padding: 30px;
+    background: linear-gradient(87deg, rgba(255,255,255,1) 0%, rgba(196,225,231,1) 99%);
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    margin: 10px;
+}
+.mapa {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4E1E7;
+}
+.imagen-empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4E1E7;
+    height: 350px;
+    width: 100%;
+}
+.form {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4E1E7;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.form input {
+    width: 100%;
+    height: 20px;
+    margin: 1px;
+    display: flex;
+    border-radius: 5px;
+}
+.form button {
+    padding: 5px;
+    border: none;
+    background: #121fb3;
+    border-radius: 10px;  
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    color: white;
+}
+.form textarea {
+    width: 15%;
+    height: 100px;
+    margin: 1px;
+    display: flex;
+    border-radius: 5px;
+}
+.productos {
+    display: flex;   
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    
+}
+.producto1 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto2 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto3 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto4 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto5 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto6 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.direccion {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+.bodyUbicacion {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto  auto auto;
+    gap: 5px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "main   main   main   main"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+nav {
+    grid-area: nav;
+}
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer {
+    grid-area: footer;
+   ;
+}
+@media (max-width:1146)  {
+    .bodyUbicacion {
+        width: 900px;
+        height: 450px;
+    }
+}
+
+@media (max-width:1146px)  {
+    .bodyUbicacion {
+        width: 1050px;
+        height: 450px;
+    }
+}        
+
+@media (max-width:1196px)  {
+    .bodyUbicacion {
+        width: 980px;
+        height: 450px;
+    }
+}
+
+@media (min-width:1114px) {
+    .bodyUbicacion {
+        width: 980px;
+        height: 450px;
+    }
+}
+
