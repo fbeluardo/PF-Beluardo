@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubicación</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/favicon-96x96.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/favicon-96x96.png" type="image/x-icon">
 </head>
-<body class="bodyUbicacion">
+<body>
     <nav class="navegador">
-        <div class="logo"><img src="../img/Portada OK - Editado.png" alt="">
+        <div class="logo"><img src="../assets/img/Portada OK - Editado.png" alt="">
         </div>
-        <i class="fa-solid fa-bars"></i>
         <ul>
             <li><a href="../index.html" target="_blank">INICIO</a></li>
             <li><a href="../pages/nosotros.html" target="_blank">NOSOTROS</a></li>
@@ -30,20 +28,39 @@
         </ul>
     </nav>
     <header>
+
     </header>
     <main>
-        <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12033.053913661388!2d-71.152982!3d-41.063233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbb291efa882d2bd!2sDroguer%C3%ADa%20INSA!5e0!3m2!1ses!2sar!4v1669634932516!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </div>
-       <h1 class="direccion">Av. Limay 433, R8400 Bariloche, Patagonia Río Negro Argentina
-        Horario de 9 a 17 horas
-       </h1>
+        <form action class="form">
+        <label>Nombre 
+            <input type="text" name="Nombre" required></label>
+        <br>
+        <label>Empresa
+            <input type="text" name="Empresa" required>
+        </label>
+        <br>
+        <label>Teléfono
+            <input type="text" name="Teléfono o celular">
+        </label>
+        <br>
+        <label>Email
+        <input type="email" name="Email" required>
+        </label>
+        <br>
+        <textarea name="mensaje" placeholder="Ingrese un mensaje"></textarea>
+        <br>
+        <label>Suscribirme al Newsletter
+        <input type="checkbox" name="Suscribirme al Newsletter" >
+        </label>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+        <br>
+        </form>
     </main>
     <footer class="pie">
         <h1>Términos y Condiciones / Todos los derechos reservados DROGUERIA INSA SAS</h1>
-        <a href="https://wa.me/542944559066?text=Hola!" target="_blank"> <img src="../img/ok (2).jpg" alt=""></a>
+        <a href="https://wa.me/542944559066?text=Hola!" target="_blank"> <img src="../assets/img/ok (2).jpg" alt=""></a>
     </footer>
-
-
 </body>
 </html>
