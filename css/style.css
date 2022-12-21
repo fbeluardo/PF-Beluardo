@@ -39,16 +39,18 @@
     right: 10px;
     background-color: #C4E1E7;
 }
-@media(min-width:600px){
+@media(min-width:950px){
     .navegador .fa-bars {
         display: none;
 }
 }
-@media(max-width:600px){
+@media(max-width:950px){
     .navegador .fa-bars {
     display: block;
+    flex-direction: column;
     color: white; 
     font-size: 30px;
+    background-color: #C4E1E7;
 }
     .navegador > ul {
         position: fixed;
