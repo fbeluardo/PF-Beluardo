@@ -1,0 +1,126 @@
+.marcas {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: start;
+    align-items: stretch;
+    gap: 150px;
+    padding: 20px;
+}
+.marca1 {
+    display: flex;
+    width: 300px;
+    height: 102px;
+    margin-left: 5px;
+}
+.marca2 {
+    display: flex;
+    width: 300px;
+    height: 120px;
+}
+.marca3 {
+    display: flex;
+    width: 250px;
+    height: 130px;
+}
+.empresa {
+    padding: 15px;
+    background: linear-gradient(87deg, rgba(255,255,255,1) 0%, rgba(196,225,231,1) 99%);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    margin: 10px;
+    margin-right: 15px;
+    text-overflow: initial;
+}
+.mapa {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4E1E7;
+}
+.imagen-empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4E1E7;
+    height: 350px;
+    width: 100%;
+}
+.form {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4E1E7;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.form input {
+    width: 100%;
+    height: 20px;
+    margin: 1px;
+    display: flex;
+    border-radius: 5px;
+}
+.form button {
+    padding: 5px;
+    border: none;
+    background: #121fb3;
+    border-radius: 10px;  
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    color: white;
+}
+.form textarea {
+    width: 15%;
+    height: 100px;
+    margin: 1px;
+    display: flex;
+    border-radius: 5px;
+}
+.productos {
+    display: flex;   
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    
+}
+.producto1 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto2 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto3 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto4 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto5 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.producto6 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.direccion {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}

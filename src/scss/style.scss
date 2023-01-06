@@ -1,0 +1,33 @@
+@import "reset";
+@import "nav";
+@import "header";
+@import "button";
+@import "footer";
+@import "animation";
+@import "main";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.bodyUbicacion {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto  auto auto;
+    gap: 5px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "main   main   main   main"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+nav {
+    grid-area: nav;
+}
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer {
+    grid-area: footer;
+   ;
+}
