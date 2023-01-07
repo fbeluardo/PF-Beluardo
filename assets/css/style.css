@@ -58,18 +58,22 @@
   .navegador > ul {
     position: fixed;
     top: 0;
+    gap: 10px;
+    z-index: 100;
+    padding-top: 90px;
     left: -300px;
     width: 250px;
+    background-color: #C4E1E7;
     flex-direction: column;
     justify-content: start;
-    padding-top: 200px;
+    align-items: center;
     height: 100vh;
     transition: 0.2;
   }
   .navegador .fa-bars:hover + ul {
     left: 0;
   }
-  .navegador ul:hover {
+  .navegador > ul:hover {
     left: 0;
   }
 }
@@ -118,7 +122,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  display: inline-block;
+  display: block;
 }
 
 .btn:hover {
@@ -409,29 +413,14 @@
 .marcas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  align-items: stretch;
-  gap: 150px;
+  justify-content: space-around;
   padding: 20px;
 }
 
-.marca1 {
+.marca {
   display: flex;
-  width: 300px;
-  height: 102px;
-  margin-left: 5px;
-}
-
-.marca2 {
-  display: flex;
-  width: 300px;
-  height: 120px;
-}
-
-.marca3 {
-  display: flex;
-  width: 250px;
-  height: 130px;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .empresa {
@@ -448,6 +437,7 @@
 .mapa {
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #C4E1E7;
@@ -464,11 +454,9 @@
 
 .form {
   width: 100%;
-  padding: 40px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   background-color: #C4E1E7;
   border-radius: 10px;
   font-weight: bold;

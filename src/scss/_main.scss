@@ -1,26 +1,13 @@
 .marcas {
     display: flex;
     flex-wrap: wrap;   
-    justify-content: start;
-    align-items: stretch;
-    gap: 150px;
+    justify-content: space-around;
     padding: 20px;
 }
-.marca1 {
-    display: flex;
-    width: 300px;
-    height: 102px;
-    margin-left: 5px;
-}
-.marca2 {
-    display: flex;
-    width: 300px;
-    height: 120px;
-}
-.marca3 {
-    display: flex;
-    width: 250px;
-    height: 130px;
+.marca{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
 }
 .empresa {
     padding: 15px;
