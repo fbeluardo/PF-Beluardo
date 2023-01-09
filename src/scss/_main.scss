@@ -15,9 +15,8 @@
     background: linear-gradient(87deg, rgba(255,255,255,1) 0%, rgba(196,225,231,1) 99%);
     font-family: 'Noto Sans', sans-serif;
     font-size: 13px;
-    text-align: justify;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .mapa {
     display: flex;
@@ -27,11 +26,13 @@
 }
 .videoEmpresa {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 500px;
     width: 100%;
     margin-left: 10px;
+    gap: 30px;
     }
 .productos {
     display: flex;   

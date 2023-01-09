@@ -144,33 +144,6 @@
   transition: all 0.35s;
 }
 
-.pie {
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  font-size: 6px;
-  margin-bottom: 5px;
-  margin-top: 100px;
-  height: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.pie1 {
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  font-size: 6px;
-  margin-bottom: 5px;
-  margin-top: 400px;
-  height: 15px;
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   background: #2a2e32;
 }
@@ -449,9 +422,8 @@ footer {
   background: linear-gradient(87deg, rgb(255, 255, 255) 0%, rgb(196, 225, 231) 99%);
   font-family: "Noto Sans", sans-serif;
   font-size: 13px;
-  text-align: justify;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .mapa {
@@ -463,11 +435,13 @@ footer {
 
 .videoEmpresa {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 350px;
+  height: 500px;
   width: 100%;
   margin-left: 10px;
+  gap: 30px;
 }
 
 .productos {
