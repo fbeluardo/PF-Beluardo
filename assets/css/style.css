@@ -85,15 +85,6 @@
   margin-top: 10px;
 }
 
-.subtitulo {
-  width: 100%;
-  margin: 10px;
-  margin-top: 15px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
 .encabezado {
   background-image: url(../img/INSA_slider-web_1920x583_turismo.png);
   background-size: cover;
@@ -178,6 +169,37 @@
   gap: 50px;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  background: #2a2e32;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #212529;
+  border-color: #545454;
+}
+
+.form-control:focus {
+  background: #212529;
+}
+
+footer {
+  background: #212529;
 }
 
 @media (max-width: 600) {
@@ -428,68 +450,24 @@
   font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   text-align: justify;
-  text-overflow: initial;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .mapa {
   display: flex;
   flex-direction: row;
-  background-color: #C4E1E7;
   justify-content: start;
   align-items: center;
 }
 
-.imagen-empresa {
+.videoEmpresa {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #C4E1E7;
   height: 350px;
   width: 100%;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 5px;
-  background-color: #C4E1E7;
-  border-radius: 10px;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  margin-left: 50px;
-}
-
-.form input {
-  height: 20px;
-  width: 100px;
-  margin: 1px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-}
-
-.form button {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border: none;
-  background: #121fb3;
-  border-radius: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: white;
-  text-align: end;
-  width: 80px;
-}
-
-.form textarea {
-  width: 120px;
-  height: 100px;
-  margin: 1px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .productos {
@@ -543,10 +521,6 @@
   flex-wrap: wrap;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   background: #3952a3;
   color: black;
@@ -556,10 +530,12 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -683,4 +659,12 @@ ul {
 .brand {
     text-align: left;
   }
+}
+.subtitulo {
+  width: 100%;
+  margin: 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
