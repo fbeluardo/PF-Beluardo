@@ -17,6 +17,7 @@
     font-size: 13px;
     display: flex;
     flex-direction: column;
+   
 }
 .mapa {
     display: flex;
@@ -27,12 +28,10 @@
 .videoEmpresa {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    height: 500px;
-    width: 100%;
-    margin-left: 10px;
-    gap: 30px;
+    height: 600px;
+    padding-top: 10px;
     }
 .productos {
     display: flex;   
