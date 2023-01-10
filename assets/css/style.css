@@ -436,6 +436,10 @@ footer {
   justify-content: start;
   align-items: center;
   margin-left: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-content: center;
 }
 
 .videoEmpresa {
@@ -514,6 +518,10 @@ body {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
 }
 
 ul {

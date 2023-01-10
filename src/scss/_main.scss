@@ -27,6 +27,8 @@
     justify-content: start;
     align-items: center;
     margin-left: 15px;
+    width: fit-content;
+    align-content: center;
 }
 .videoEmpresa {
     display: flex;
@@ -94,6 +96,9 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    width: fit-content;
+    height: auto;
+
   }
   
   ul {
