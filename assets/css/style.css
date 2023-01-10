@@ -410,11 +410,13 @@ footer {
   padding: 20px;
   row-gap: 40px;
 }
+
 .marca {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .empresa {
   padding: 15px;
   background: linear-gradient(87deg, rgb(255, 255, 255) 0%, rgb(196, 225, 231) 99%);
