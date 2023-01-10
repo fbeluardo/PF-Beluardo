@@ -424,6 +424,10 @@ footer {
   font-size: 13px;
   display: flex;
   flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: justify;
 }
 
 .mapa {
@@ -431,6 +435,7 @@ footer {
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  margin-left: 15px;
 }
 
 .videoEmpresa {
@@ -440,6 +445,9 @@ footer {
   align-items: center;
   height: 600px;
   padding-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .productos {
@@ -503,9 +511,7 @@ body {
 
 .container {
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
 }
