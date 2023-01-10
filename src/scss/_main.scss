@@ -15,11 +15,12 @@
     background: linear-gradient(87deg, rgba(255,255,255,1) 0%, rgba(196,225,231,1) 99%);
     font-family: 'Noto Sans', sans-serif;
     font-size: 13px;
+    color: black;
     display: flex;
     flex-direction: column;
     width: fit-content;
-    text-align: justify;  
-}
+    text-align: justify;
+  }  
 .mapa {
     display: flex;
     flex-direction: row;
@@ -27,7 +28,11 @@
     align-items: center;
     margin-left: 15px;
     width: fit-content;
-    align-content: center;
+    @each $var in start,center,end{
+      .align-items-#{$var}{
+          align-items: $var;
+      }
+  }
 }
 .videoEmpresa {
     display: flex;
@@ -42,8 +47,7 @@
     display: flex;   
     justify-content: start;
     align-items: stretch;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;  
 }
 .producto1 {
     display: flex;
@@ -98,7 +102,6 @@
     height: auto;
 
   }
-  
   ul {
     list-style: none;
     padding: 0;
@@ -115,7 +118,6 @@
   .wrapper {
     box-shadow: 0 0 20px 0 rgba(1, 4, 15, 0.7);
   }
-  
   .wrapper > * {
     padding: 1em;
   }
@@ -123,7 +125,6 @@
     background: #C3C9DD;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    
   }
   .company-info h3,
   .company-info ul {

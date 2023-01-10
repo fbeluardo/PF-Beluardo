@@ -1,20 +1,19 @@
 .btn {
-  background: #fff; 
+  background-color: #fff;
   color: rgb(20, 20, 142);
-  font-weight: bold;
   border: 2px solid #024059; 
-  font-family: 'Noto Sans', sans-serif;
   padding: 16px 20px;
-  border-radius: 10px; 
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 10px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   display: block;
-}
-  .btn:hover {
+  &:hover {
     color: #fff; 
   }
-  .btn::after {
+  &::after {
     content: "";
     background: black; 
     position: absolute;
@@ -28,11 +27,12 @@
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
   }
-  .btn:hover::after {
+  &:hover::after {
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
+  }
   }
