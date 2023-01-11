@@ -42,24 +42,6 @@
   right: 10px;
   background-color: #C4E1E7;
 }
-.navegador > ul > li > ul {
-  position: fixed;
-  top: 0;
-  gap: 10px;
-  z-index: 100;
-  padding-top: 90px;
-  left: -300px;
-  width: 250px;
-  background-color: #C4E1E7;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  height: 100vh;
-  transition: 0.2;
-}
-.navegador > ul > li .fa-bars:hover + ul {
-  left: 0;
-}
 
 @media (min-width: 950px) {
   .navegador .fa-bars {
@@ -74,12 +56,41 @@
     font-size: 30px;
     background-color: #C4E1E7;
   }
+  .navegador > ul {
+    position: fixed;
+    top: 0;
+    gap: 10px;
+    z-index: 100;
+    padding-top: 90px;
+    left: -300px;
+    width: 250px;
+    background-color: #C4E1E7;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    transition: 0.2;
+  }
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+  .navegador > ul:hover {
+    left: 0;
+  }
 }
 .logo {
   width: 100%;
   display: flex;
   justify-content: left;
   margin-top: 10px;
+}
+
+.subtitulo {
+  width: 100%;
+  margin: 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .encabezado {
@@ -194,6 +205,12 @@ footer {
   margin-top: 13px;
 }
 
+@media (max-width: 1146) {
+  .bodyUbicacion {
+    width: 900px;
+    height: 450px;
+  }
+}
 .bodyLogin {
   margin: 0;
   padding: 0;
@@ -202,8 +219,8 @@ footer {
 }
 
 .login-box {
-  position: relative;
-  margin-top: 300px;
+  position: absolute;
+  margin-top: 100px;
   top: 50%;
   left: 50%;
   width: 400px;
@@ -213,10 +230,16 @@ footer {
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  margin-bottom: 5px;
 }
 
-.login-box .login-box .user-box {
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
   position: relative;
 }
 
