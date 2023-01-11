@@ -42,6 +42,24 @@
   right: 10px;
   background-color: #C4E1E7;
 }
+.navegador > ul > li > ul {
+  position: fixed;
+  top: 0;
+  gap: 10px;
+  z-index: 100;
+  padding-top: 90px;
+  left: -300px;
+  width: 250px;
+  background-color: #C4E1E7;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  transition: 0.2;
+}
+.navegador > ul > li .fa-bars:hover + ul {
+  left: 0;
+}
 
 @media (min-width: 950px) {
   .navegador .fa-bars {
@@ -55,27 +73,6 @@
     color: black;
     font-size: 30px;
     background-color: #C4E1E7;
-  }
-  .navegador > ul {
-    position: fixed;
-    top: 0;
-    gap: 10px;
-    z-index: 100;
-    padding-top: 90px;
-    left: -300px;
-    width: 250px;
-    background-color: #C4E1E7;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: 100vh;
-    transition: 0.2;
-  }
-  .navegador .fa-bars:hover + ul {
-    left: 0;
-  }
-  .navegador > ul:hover {
-    left: 0;
   }
 }
 .logo {
@@ -104,7 +101,7 @@
   margin-bottom: 50px;
 }
 
-.btn {
+.boton {
   background-color: #fff;
   color: rgb(20, 20, 142);
   border: 2px solid #024059;
@@ -116,11 +113,12 @@
   z-index: 1;
   overflow: hidden;
   display: block;
+  height: 65px;
 }
-.btn:hover {
+.boton:hover {
   color: #fff;
 }
-.btn::after {
+.boton::after {
   content: "";
   background: black;
   position: absolute;
@@ -133,7 +131,7 @@
   right: -100%;
   transition: all 0.35s;
 }
-.btn:hover::after {
+.boton:hover::after {
   left: 0;
   right: 0;
   top: 0;
@@ -218,18 +216,11 @@ footer {
   margin-bottom: 5px;
 }
 
-.login-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
-
-.login-box .user-box {
+.user-box {
   position: relative;
 }
 
-.login-box .user-box input {
+.user-box input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -241,7 +232,7 @@ footer {
   background: transparent;
 }
 
-.login-box .user-box label {
+.user-box label {
   position: absolute;
   top: 0;
   left: 0;
@@ -252,15 +243,7 @@ footer {
   transition: 0.5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #03e9f4;
-  font-size: 12px;
-}
-
-.login-box form a {
+form a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -274,19 +257,27 @@ footer {
   letter-spacing: 4px;
 }
 
-.login-box a:hover {
+a:hover {
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
 }
 
-.login-box a span {
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+a span {
   position: absolute;
   display: block;
 }
 
-.login-box a span:nth-child(1) {
+a span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -313,7 +304,7 @@ footer {
     left: 100%;
   }
 }
-.login-box a span:nth-child(2) {
+a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -342,7 +333,7 @@ footer {
     top: 100%;
   }
 }
-.login-box a span:nth-child(3) {
+a span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -371,7 +362,7 @@ footer {
     right: 100%;
   }
 }
-.login-box a span:nth-child(4) {
+a span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;

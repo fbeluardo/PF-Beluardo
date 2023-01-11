@@ -1,3 +1,6 @@
+@import "mixins";
+@import "variables";
+@import "extend";
 @import "reset";
 @import "nav";
 @import "header";
@@ -5,8 +8,6 @@
 @import "footer";
 @import "animation";
 @import "main";
-@import "variables";
-@import "extend";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');

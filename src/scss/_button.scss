@@ -1,4 +1,4 @@
-.btn {
+.boton {
   background-color: #fff;
   color: rgb(20, 20, 142);
   border: 2px solid #024059; 
@@ -10,6 +10,7 @@
   z-index: 1;
   overflow: hidden;
   display: block;
+  @include boton(65px);
   &:hover {
     color: #fff; 
   }
@@ -36,3 +37,4 @@
     transition: all 0.35s;
   }
   }
+  

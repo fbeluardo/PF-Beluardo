@@ -30,6 +30,24 @@
                 right: 10px;
                 background-color: #C4E1E7;
             }
+            > ul {
+                position: fixed;
+                top: 0;
+                gap: 10px;
+                z-index: 100;
+                padding-top: 90px;
+                left: -300px;
+                width: 250px;
+                background-color: #C4E1E7;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                height: 100vh;
+                transition: 0.2;
+            }
+            .fa-bars:hover + ul {
+                left: 0;
+            }  
         }
     }
 }
@@ -47,27 +65,6 @@
     font-size: 30px;
     background-color: #C4E1E7;
 }
-    .navegador > ul {
-        position: fixed;
-        top: 0;
-        gap: 10px;
-        z-index: 100;
-        padding-top: 90px;
-        left: -300px;
-        width: 250px;
-        background-color: #C4E1E7;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        height: 100vh;
-        transition: 0.2;
-    }
-    .navegador .fa-bars:hover + ul {
-        left: 0;
-    }
-    .navegador > ul:hover {
-        left: 0;
-    }
 }
 .logo {
     width: 100%;
