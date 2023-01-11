@@ -124,6 +124,7 @@
   z-index: 1;
   overflow: hidden;
   display: block;
+  text-align: center;
   height: 65px;
 }
 .boton:hover {
@@ -205,12 +206,6 @@ footer {
   margin-top: 13px;
 }
 
-@media (max-width: 1146) {
-  .bodyUbicacion {
-    width: 900px;
-    height: 450px;
-  }
-}
 .bodyLogin {
   margin: 0;
   padding: 0;
@@ -219,8 +214,8 @@ footer {
 }
 
 .login-box {
-  position: absolute;
-  margin-top: 100px;
+  position: relative;
+  margin-top: 300px;
   top: 50%;
   left: 50%;
   width: 400px;
@@ -230,16 +225,10 @@ footer {
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  margin-bottom: 5px;
 }
 
-.login-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
-
-.login-box .user-box {
+.login-box .login-box .user-box {
   position: relative;
 }
 
@@ -663,4 +652,23 @@ ul {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: white;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: stretch;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 10px;
+  margin: 10px;
+}
+
+.tarjeta img {
+  width: 120px;
 }

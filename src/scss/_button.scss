@@ -10,6 +10,7 @@
   z-index: 1;
   overflow: hidden;
   display: block;
+  text-align: center;
   @include boton(65px);
   &:hover {
     color: #fff; 
