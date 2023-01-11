@@ -1,10 +1,10 @@
 .boton {
-  background-color: #fff;
-  color: rgb(20, 20, 142);
-  border: 2px solid #024059; 
-  padding: 16px 20px;
-  font-weight: bold;
-  font-family: 'Noto Sans', sans-serif;
+  background-color: map-get($boton , fondo);
+  color: map-get($boton , color);
+  border: map-get($boton , bordes); 
+  padding: map-get($boton , padding);
+  font-weight: map-get($boton , letra);
+  font-family: map-get($boton , claseletra);
   border-radius: 10px;
   position: relative;
   z-index: 1;

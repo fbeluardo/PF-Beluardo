@@ -1,5 +1,5 @@
 .navegador {
-    background-color: #C4E1E7;
+    background-color: $fondo;
     padding: 15px;
     flex-wrap: wrap;
     > ul {
@@ -45,7 +45,7 @@
     flex-direction: column;
     color: black; 
     font-size: 30px;
-    background-color: #C4E1E7;
+    background-color: $fondo;
 }
     .navegador > ul {
         position: fixed;
